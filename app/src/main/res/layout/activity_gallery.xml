@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.barry.firebasesearch.GalleryActivity">
+
+    <ImageView
+        android:id="@+id/imageV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/image_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Akishima"
+        android:inputType="textCapSentences|textCapWords|textPersonName|textAutoCorrect"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:typeface="monospace"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/profileStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Nice to meet you, I'm Ashley"
+        android:inputType="textCapSentences|textCapWords|textPersonName|textAutoCorrect"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:typeface="serif"
+        android:textSize="20sp" />
+
+    <com.like.LikeButton
+        app:icon_type="heart"
+        app:icon_size="25dp"
+        android:id="@+id/heart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp" />
+
+</LinearLayout>
